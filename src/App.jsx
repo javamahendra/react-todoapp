@@ -10,7 +10,7 @@ function App() {
   const [message, setMessage] = useState({
     id: '',
     text: '',
-    fcolor: ''
+    fcolor: '#000000'
   });
   const [editingItem, setEditingItem] = useState(
     {id: "",
