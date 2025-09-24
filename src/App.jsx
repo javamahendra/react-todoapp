@@ -3,10 +3,7 @@ import './App.css'
 
 function App() {
 
-  const [todos, setTodos] = useState([]);
-  //const [fmsg, setFmsg] = useState();
-  //const [fclr, setFclr] = useState();
-  
+  const [todos, setTodos] = useState([]);  
   const [message, setMessage] = useState({
     id: '',
     text: '',
@@ -21,7 +18,6 @@ function App() {
       ...message,
       text: e.target.value
     });
-    //setFmsg(e.target.value)
   };
 
   const changeFColor  =(e) =>{
@@ -29,7 +25,6 @@ function App() {
       ...message,
       fcolor: e.target.value
     });
-    //setFclr(e.target.value);
   };
 
   const handleSubmit =(e) => {
